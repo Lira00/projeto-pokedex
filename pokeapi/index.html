@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enciclopédia Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon-192.png" />
+    <meta name="theme-color" content="#e3350d" />
+  </head>
+  <body>
+    <h1>Pokédex - InternationalDex</h1>
+    <div class="controls">
+      <input
+        type="text"
+        id="search"
+        placeholder="Buscar por nome ou número..."
+      />
+      <button id="toggle-theme" style="margin: 10px auto; display: block">
+        Modo Noturno
+      </button>
+
+      <div id="type-filters"></div>
+    </div>
+
+    <div id="loader">Carregando Pokédex...</div>
+
+    <div id="generation-selector" class="generation-selector"></div>
+
+    <div class="pokedex" id="pokedex"></div>
+
+    <div id="pokemon-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <div id="modal-body">Carregando...</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(() => console.log("Service Worker registrado!"));
+      }
+    </script>
+  </body>
+</html>
