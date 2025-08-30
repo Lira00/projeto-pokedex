@@ -317,13 +317,13 @@ body.dark-mode #toggle-theme {
   --type-fighting: #c03028;
   --type-poison: #a040a0;
   --type-ground: #e0c068;
-  --type-flying: #a890f0;
+  --type-flying: #ac94f3;
   --type-psychic: #f85888;
   --type-bug: #a8b820;
   --type-rock: #b8a038;
-  --type-ghost: #705898;
+  --type-ghost: #735c97;
   --type-dragon: #7038f8;
-  --type-dark: #705848;
+  --type-dark: #46413d;
   --type-steel: #b8b8d0;
   --type-fairy: #ee99ac;
 }
